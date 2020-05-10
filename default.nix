@@ -2,4 +2,5 @@
 {
     uniutils = pkgs.callPackage ./pkgs/uniutils { };
     moar = pkgs.callPackage ./pkgs/moar { };
+    slit = pkgs.callPackage ./pkgs/slit { };
 }
