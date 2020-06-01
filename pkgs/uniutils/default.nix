@@ -7,8 +7,7 @@ stdenv.mkDerivation rec {
   pname = "uniutils";
   version = "2.27-" + versionSuffix; 
   src = fetchurl {
-    # url = "http://billposer.org/Software/Downloads/uniutils-2.27.tar.gz"; # dead link as of April 2020
-    url = "http://deb.debian.org/debian/pool/main/u/uniutils/uniutils_2.27.orig.tar.gz"; # same sha256 as upstream 
+    url = "http://billposer.org/Software/Downloads/uniutils-2.27.tar.gz";
     sha256 = "15hmlsfwicdsqniqap0gz7dbv7a7bl9pkxhh0pkalrrsb8hsjqn6";
   };
 
@@ -18,7 +17,7 @@ stdenv.mkDerivation rec {
 
   meta = {
     description = "utilities for inspecting unicode text";
-    homepage = "http://billposer.org/Software/uniutils.html"; # dead link as of April 2020
+    homepage = "http://billposer.org/Software/uniutils.html";
     license = stdenv.lib.licenses.gpl3;
   };
 }
