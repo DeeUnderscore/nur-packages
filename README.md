@@ -6,3 +6,4 @@ Some personal package expressions. Contrary to name, this repo is *not* actually
 * **uniutils**: <http://billposer.org/Software/uniutils.html>
 * **moar**: <https://github.com/walles/moar>
 * **slit**: <https://github.com/tigrawap/slit>
+* **faq**: <https://github.com/jzelinskie/faq>
