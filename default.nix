@@ -5,4 +5,5 @@
     slit = pkgs.callPackage ./pkgs/slit { };
     faq = pkgs.callPackage ./pkgs/faq { };
     git-archive-all = pkgs.callPackage ./pkgs/git-archive-all { };
+    cubeglobe-bot = pkgs.callPackage ./pkgs/cubeglobe-bot { };
 }
