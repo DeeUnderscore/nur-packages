@@ -23,6 +23,8 @@ rustPlatform.buildRustPackage rec {
     SDL2_image
   ];
 
+  doCheck = false;
+
   postInstall = ''
     mkdir -p $out/share/cubeglobe
     cp -R cubeglobe/assets $out/share/cubeglobe/
