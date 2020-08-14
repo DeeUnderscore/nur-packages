@@ -23,6 +23,12 @@ rustPlatform.buildRustPackage rec {
     SDL2_image
   ];
 
+  postInstall = ''
+    mkdir -p $out/share/cubeglobe
+    cp -R cubeglobe/assets $out/share/cubeglobe/
+    substituteInPlace $out/share/cubeglobe/assets/full-tiles.toml --replace "assets/" "$out/share/cubeglobe/assets/"
+  '';
+
   meta = with stdenv.lib; {
     description = "Fediverse bot for posting randomly generated landscapes made of blocks";
     homepage = "https://github.com/DeeUnderscore/cubeglobe-bot/";
