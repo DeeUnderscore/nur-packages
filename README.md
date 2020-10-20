@@ -9,3 +9,4 @@ Some personal [Nix](https://nixos.org/) package expressions. Contrary to name, t
 * **faq**: <https://github.com/jzelinskie/faq>
 * **git-archive-all**: <https://github.com/Kentzo/git-archive-all>
 * **cubeglobe-bot**: <https://github.com/DeeUnderscore/cubeglobe-bot>
+* **rdrview**: <https://github.com/eafer/rdrview>
