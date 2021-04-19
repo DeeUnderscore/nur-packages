@@ -11,3 +11,4 @@ Some personal [Nix](https://nixos.org/) package expressions. Contrary to name, t
 * **cubeglobe-bot**: <https://github.com/DeeUnderscore/cubeglobe-bot>
 * **rdrview**: <https://github.com/eafer/rdrview>
 * **libuiohook**: <https://github.com/kwhat/libuiohook>
+* **input-overlay** (obs-input-overlay): <https://github.com/univrsal/input-overlay/>
