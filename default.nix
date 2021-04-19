@@ -7,4 +7,5 @@
     rdrview = pkgs.callPackage ./pkgs/rdrview { };
     slit = pkgs.callPackage ./pkgs/slit { };
     uniutils = pkgs.callPackage ./pkgs/uniutils { };
+    libuiohook = pkgs.callPackage ./pkgs/libuiohook { };
 }

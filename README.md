@@ -10,3 +10,4 @@ Some personal [Nix](https://nixos.org/) package expressions. Contrary to name, t
 * **git-archive-all**: <https://github.com/Kentzo/git-archive-all>
 * **cubeglobe-bot**: <https://github.com/DeeUnderscore/cubeglobe-bot>
 * **rdrview**: <https://github.com/eafer/rdrview>
+* **libuiohook**: <https://github.com/kwhat/libuiohook>
