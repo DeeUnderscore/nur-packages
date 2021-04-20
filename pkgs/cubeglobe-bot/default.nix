@@ -1,4 +1,4 @@
-{ stdenv, fetchFromGitHub, pkgs, rustPlatform }:
+{ stdenv, lib, fetchFromGitHub, pkgs, rustPlatform }:
 rustPlatform.buildRustPackage rec {
   pname = "cubeglobe-bot";
   version = "0.1.2";
@@ -31,7 +31,7 @@ rustPlatform.buildRustPackage rec {
     substituteInPlace $out/share/cubeglobe/assets/full-tiles.toml --replace "assets/" "$out/share/cubeglobe/assets/"
   '';
 
-  meta = with stdenv.lib; {
+  meta = with lib; {
     description = "Fediverse bot for posting randomly generated landscapes made of blocks";
     homepage = "https://github.com/DeeUnderscore/cubeglobe-bot/";
     license = licenses.isc;

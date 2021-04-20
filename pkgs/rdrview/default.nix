@@ -1,4 +1,5 @@
 { stdenv
+, lib
 , fetchFromGitHub
 , libxml2
 , libseccomp
@@ -23,6 +24,6 @@ stdenv.mkDerivation {
   meta = {
     description = "Firefox Reader View as a Linux command line tool ";
     homepage = "https://github.com/eafer/rdrview";
-    license = stdenv.lib.licenses.asl20;
+    license = lib.licenses.asl20;
   };
 }

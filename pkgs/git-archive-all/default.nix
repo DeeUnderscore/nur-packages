@@ -1,4 +1,4 @@
-{ stdenv, pkgs, python3Packages, fetchFromGitHub }:
+{ stdenv, lib, pkgs, python3Packages, fetchFromGitHub }:
 python3Packages.buildPythonApplication  rec {
   pname = "git-archive-all";
   version = "1.22.0";
@@ -33,6 +33,6 @@ python3Packages.buildPythonApplication  rec {
   meta = {
     description = "A wrapper for git-archive which exports git repos together with their submodules";
     homepage = "https://github.com/Kentzo/git-archive-all";
-    license = stdenv.lib.licenses.mit;
+    license = lib.licenses.mit;
   };
 }

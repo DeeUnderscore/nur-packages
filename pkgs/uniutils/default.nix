@@ -1,5 +1,5 @@
 # this expression builds uniutils with the latest Unicode data, that is, whatever pkgs.unicode-character-database is at
-{ stdenv, fetchurl, unicode-character-database }:
+{ stdenv, lib, fetchurl, unicode-character-database }:
 let
 versionSuffix = unicode-character-database.version;
 in
@@ -18,6 +18,6 @@ stdenv.mkDerivation rec {
   meta = {
     description = "utilities for inspecting unicode text";
     homepage = "http://billposer.org/Software/uniutils.html";
-    license = stdenv.lib.licenses.gpl3;
+    license = lib.licenses.gpl3;
   };
 }

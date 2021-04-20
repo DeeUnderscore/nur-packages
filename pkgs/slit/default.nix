@@ -1,4 +1,4 @@
-{ buildGoPackage, fetchFromGitHub, stdenv }:
+{ buildGoPackage, lib, fetchFromGitHub, stdenv }:
 buildGoPackage  {
   pname = "slit";
   version = "1.3.0";
@@ -14,6 +14,6 @@ buildGoPackage  {
   meta = {
     description = "a modern pager for viewing logs";
     homepage = "https://github.com/tigrawap/slit";
-    license = stdenv.lib.licenses.mit;
+    license = lib.licenses.mit;
   };
 }

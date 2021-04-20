@@ -1,4 +1,4 @@
-{ stdenv, fetchFromGitHub, buildGoPackage, jq }:
+{ stdenv, lib, fetchFromGitHub, buildGoPackage, jq }:
 buildGoPackage rec {
   pname = "faq";
   version = "0.0.6";
@@ -16,6 +16,6 @@ buildGoPackage rec {
   meta = {
     description = "format-agnostic jq";
     homepage = "https://github.com/jzelinskie/faq";
-    license = stdenv.lib.licenses.asl20;
+    license = lib.licenses.asl20;
   };
 }
