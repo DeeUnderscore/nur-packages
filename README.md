@@ -2,6 +2,9 @@
 
 Some personal [Nix](https://nixos.org/) package expressions. Contrary to name, this repo is *not* actually part of [NUR](https://github.com/nix-community/NUR), though it uses [the template](https://github.com/nix-community/nur-packages-template).
 
+## Cachix
+There is a Cachix cache available for these packages: <https://deeunderscore-nur.cachix.org>
+
 ## Packages
 * **uniutils**: <http://billposer.org/Software/uniutils.html>
 * **moar**: <https://github.com/walles/moar>
