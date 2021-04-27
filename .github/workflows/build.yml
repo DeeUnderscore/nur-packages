@@ -8,6 +8,7 @@ on:
 jobs:
   tests:
     strategy:
+      fail-fast: false
       matrix:
         cachixName:
           - deeunderscore-nur
