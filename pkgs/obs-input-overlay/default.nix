@@ -20,7 +20,7 @@ in obs-studio.overrideAttrs (oldAttrs: rec {
   name = "input-overlay-4.8";
   buildInputs = oldAttrs.buildInputs ++ [ libuiohook ];
 
-  postUnpack = oldAttrs.postUnpack + "\n" + ''
+  postUnpack = if (builtins.hasAttr "postUnpack" oldAttrs) then oldAttrs.postUnpack else "" + "\n" + ''
     cp -r ${inputOverlaySrc}/ source/plugins/input-overlay
     chmod -R u+w source/plugins/input-overlay 
     cp ${patchedPluginsCMakeLists} source/plugins/CMakeLists.txt
