@@ -20,7 +20,7 @@ in obs-studio.overrideAttrs (oldAttrs: rec {
   name = "input-overlay-4.8";
   buildInputs = oldAttrs.buildInputs ++ [ libuiohook ];
 
-  postUnpack = if (builtins.hasAttr "postUnpack" oldAttrs) then oldAttrs.postUnpack else "" + "\n" + ''
+  postUnpack = (if (builtins.hasAttr "postUnpack" oldAttrs) then oldAttrs.postUnpack else "") + "\n" + ''
     cp -r ${inputOverlaySrc}/ source/plugins/input-overlay
     chmod -R u+w source/plugins/input-overlay 
     cp ${patchedPluginsCMakeLists} source/plugins/CMakeLists.txt
@@ -35,13 +35,8 @@ in obs-studio.overrideAttrs (oldAttrs: rec {
 
   installPhase = ''
     mkdir $out
-    
     mkdir -p $out/data
 
-    pwd 
-    ls
-
-    echo cp -r rundir/Release/data/obs-plugins/input-overlay/* $out/data/
     cp -r rundir/Release/data/obs-plugins/input-overlay/* $out/data/
   '' + lib.optionalString (stdenv.is64bit) ''
     mkdir -p $out/bin/64bit
