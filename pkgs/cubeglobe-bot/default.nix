@@ -1,17 +1,17 @@
 { stdenv, lib, fetchFromGitHub, pkgs, rustPlatform }:
 rustPlatform.buildRustPackage rec {
   pname = "cubeglobe-bot";
-  version = "0.1.2";
+  version = "0.1.3";
 
   src = fetchFromGitHub {
     owner = "DeeUnderscore";
     repo = "cubeglobe-bot";
     rev = "v${version}";
-    sha256 = "1n1nxqiybabb98nzs4s30c8430fk2vhclfw2hsk1gbw9v22vzwxa";
+    sha256 = "00p7n4ycmaam8faivg55f272n0i1a68x60f87sa5vfn3nfkvn15f";
     fetchSubmodules = true;
   };
 
-  cargoSha256 = "007z4p2qy5gg3kkz5npc5wjhr4niw0qnm32a756m1696hxmn98wa";
+  cargoSha256 = "0f3mq47hp4zjripl3fn5vy8qhpy3sklkmz23vl4bvpbdb8h128l8";
 
   nativeBuildInputs = with pkgs; [
     pkgconfig
