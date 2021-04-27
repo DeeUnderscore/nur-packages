@@ -29,6 +29,7 @@ mkDerivation rec {
     description = "Plugin for obs-studio providing a remote control API with websockets.";
     homepage = "https://github.com/Palakis/obs-websocket";
     license = lib.licenses.gpl2Plus;
+    broken = true; # broken on nixos-20.09, builds on master
   };
 
 }
