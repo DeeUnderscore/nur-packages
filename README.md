@@ -16,3 +16,8 @@ There is a Cachix cache available for these packages: <https://deeunderscore-nur
 * **libuiohook**: <https://github.com/kwhat/libuiohook>
 * **input-overlay** (obs-input-overlay): <https://github.com/univrsal/input-overlay/>
 * **obs-websocket**: <https://github.com/Palakis/obs-websocket/>
+* **moebius**: <https://blocktronics.github.io/moebius/>
+
+## Notes
+### moebius
+* Splash screen does not work properly. Selecting File > New does open a new editor, though. 
