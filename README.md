@@ -17,6 +17,7 @@ There is a Cachix cache available for these packages: <https://deeunderscore-nur
 * **input-overlay** (obs-input-overlay): <https://github.com/univrsal/input-overlay/>
 * **obs-websocket**: <https://github.com/Palakis/obs-websocket/>
 * **moebius**: <https://blocktronics.github.io/moebius/>
+* **linx-client**: <https://github.com/andreimarcu/linx-client>
 
 ## Notes
 ### moebius

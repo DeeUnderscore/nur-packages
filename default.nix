@@ -11,4 +11,5 @@ rec {
     obs-input-overlay = pkgs.callPackage ./pkgs/obs-input-overlay { inherit libuiohook; };
     obs-websocket = pkgs.libsForQt5.callPackage ./pkgs/obs-websocket { };
     moebius = pkgs.callPackage ./pkgs/moebius { };
+    linx-client = pkgs.callPackage ./pkgs/linx-client { };
 }
