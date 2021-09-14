@@ -13,4 +13,5 @@ rec {
     moebius = pkgs.callPackage ./pkgs/moebius { };
     linx-client = pkgs.callPackage ./pkgs/linx-client { };
     coeurl = pkgs.callPackage ./pkgs/coeurl { };
+    mtxclient-unstable = pkgs.callPackage ./pkgs/mtxclient { inherit coeurl; };
 }

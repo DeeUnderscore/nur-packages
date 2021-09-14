@@ -18,8 +18,12 @@ There is a Cachix cache available for these packages: <https://deeunderscore-nur
 * **obs-websocket**: <https://github.com/Palakis/obs-websocket/>
 * **moebius**: <https://blocktronics.github.io/moebius/>
 * **linx-client**: <https://github.com/andreimarcu/linx-client>
+* **mtxclient** (mtxclient-unstable): <https://github.com/Nheko-Reborn/mtxclient>
 * **coeurl**: <https://nheko.im/nheko-reborn/coeurl>
 
 ## Notes
 ### moebius
 * Splash screen does not work properly. Selecting File > New does open a new editor, though. 
+
+### mtxclient 
+This is an unstable version of mtxclient (stable is availble in nixpkgs), to go with nheko-unstable
