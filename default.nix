@@ -12,4 +12,5 @@ rec {
     obs-websocket = pkgs.libsForQt5.callPackage ./pkgs/obs-websocket { };
     moebius = pkgs.callPackage ./pkgs/moebius { };
     linx-client = pkgs.callPackage ./pkgs/linx-client { };
+    coeurl = pkgs.callPackage ./pkgs/coeurl { };
 }

@@ -18,6 +18,7 @@ There is a Cachix cache available for these packages: <https://deeunderscore-nur
 * **obs-websocket**: <https://github.com/Palakis/obs-websocket/>
 * **moebius**: <https://blocktronics.github.io/moebius/>
 * **linx-client**: <https://github.com/andreimarcu/linx-client>
+* **coeurl**: <https://nheko.im/nheko-reborn/coeurl>
 
 ## Notes
 ### moebius
