@@ -12,6 +12,7 @@ rec {
     obs-websocket = pkgs.libsForQt5.callPackage ./pkgs/obs-websocket { };
     moebius = pkgs.callPackage ./pkgs/moebius { };
     linx-client = pkgs.callPackage ./pkgs/linx-client { };
+    nheko-unstable = pkgs.libsForQt5.callPackage ./pkgs/nheko { inherit coeurl; mtxclient = mtxclient-unstable; };
     coeurl = pkgs.callPackage ./pkgs/coeurl { };
     mtxclient-unstable = pkgs.callPackage ./pkgs/mtxclient { inherit coeurl; };
 }
