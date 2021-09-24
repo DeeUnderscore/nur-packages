@@ -1,19 +1,27 @@
-{ buildGoPackage, fetchFromGitHub, highlight }:
-buildGoPackage rec {
+{ buildGoModule, fetchFromGitHub }:
+buildGoModule rec {
   pname = "moar-pager"; # not to be confused with moarvm 
-  version = "0.9.22";
+  version = "1.8.2";
+
   src = fetchFromGitHub {
     owner = "walles";
     repo = "moar";
-    rev = version;
-    sha256 = "14bad0irqbrqv0rjqmkgq9wq9pxnijh5bjahhcyjyildivlssvsn";
+    rev = "v${version}";
+    sha256 = "sha256-5IJzGm32Uo+x2b+yWmmWXT5uxPQmii6SCXti2QDHkqc=";
   };
-  goDeps = ./deps.nix;
-  goPackagePath = "github.com/walles/moar";
-  buildFlags = [ ''-ldflags="-Xmain.versionString=${version}"'' ]; # TODO: This actually does nothing
+
+  vendorSha256 = "sha256-6I4TUQVtz6TQPgKLSuyVfwZJfrVSn+APGEGMYJFeEn4=";
+
+  ldflags = [
+    "-s" "-w"
+    "-X main.versionString=${version}"
+  ];
+
+  # tests cannot find the sample files dir
+  doCheck = false;
 
   meta = {
-    description = "a terminal pager";
+    description = "A terminal pager";
     homepage = "https://github.com/walles/moar";
     license = "BSD-2-Clause-FreeBSD";
   };
