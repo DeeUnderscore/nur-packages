@@ -6,8 +6,8 @@ python3Packages.buildPythonApplication  rec {
   src = fetchFromGitHub {
     owner = "Kentzo";
     repo = "git-archive-all";
-    rev = "1.22.0";
-    sha256 = "1znx3w5w113zl1qch9rvk4hppirr1lxc1fzp88v54nlmvsr68982";
+    rev = "1.23.0";
+    sha256 = "sha256-G1xaZ/71omLnl7eVRIzIwB6n5MqJgWXZuh+z/ZDYSeY=";
   };
 
   preCheck = ''
@@ -19,16 +19,12 @@ python3Packages.buildPythonApplication  rec {
 
   checkInputs = with python3Packages; [
     pycodestyle
-    pytest
+    pytest_5
     pytestcov
     pytest-mock
     pkgs.git
   ];
 
-  # newer versions of pycodestyle emit E741 during tests
-  checkPhase = ''
-    py.test -k 'not test_pycodestyle' test_git_archive_all.py
-  '';
 
   meta = {
     description = "A wrapper for git-archive which exports git repos together with their submodules";
