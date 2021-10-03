@@ -7,12 +7,12 @@
 , libxkbcommon } :
 stdenv.mkDerivation { 
   pname = "libuiohook";
-  version = "unstable-2021-01-07";
+  version = "unstable-2021-09-28";
   src = fetchFromGitHub {
     owner = "kwhat";
     repo = "libuiohook";
-    rev = "f4bb19be8aee7d7ee5ead89b5a89dbf440e2a71a";
-    sha256 = "1lmgbvsmmpfi49556hpb3izak7mdfbkk4ngw523afp45by7n8x1a";
+    rev = "e2c581f6d3012f68580e68a9e75b14e599baca88";
+    sha256 = "sha256-a0ekq9udqmuaym9jfLFNNjBsX0rDZn/GKhJxOWC4sAw=";
   };
 
   nativeBuildInputs = [ cmake pkg-config ];
