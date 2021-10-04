@@ -8,7 +8,7 @@ rec {
     slit = pkgs.callPackage ./pkgs/slit { };
     uniutils = pkgs.callPackage ./pkgs/uniutils { };
     libuiohook = pkgs.callPackage ./pkgs/libuiohook { };
-    obs-input-overlay = pkgs.callPackage ./pkgs/obs-input-overlay { inherit libuiohook; };
+    obs-input-overlay = pkgs.libsForQt5.callPackage ./pkgs/obs-input-overlay { };
     moebius = pkgs.callPackage ./pkgs/moebius { };
     linx-client = pkgs.callPackage ./pkgs/linx-client { };
     nheko-unstable = pkgs.libsForQt5.callPackage ./pkgs/nheko { inherit coeurl; mtxclient = mtxclient-unstable; };

@@ -22,6 +22,9 @@ There is a Cachix cache available for these packages: <https://deeunderscore-nur
 * **coeurl**: <https://nheko.im/nheko-reborn/coeurl>
 
 ## Notes
+### input-overlay
+Hint: you can use `obs-input-overlay` from this package set as a plugin in `wrapOBS` from nixpkgs-unstable ahead of 21.05, or using Home Manager's `programs.obs-studio.plugins`, if available. 
+
 ### moebius
 * Splash screen does not work properly. Selecting File > New does open a new editor, though. 
 
