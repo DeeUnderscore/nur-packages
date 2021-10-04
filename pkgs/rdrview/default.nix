@@ -7,13 +7,13 @@
 }:
 stdenv.mkDerivation {
   pname = "rdrview";
-  version = "unstable-2020-10-20";
+  version = "unstable-2021-09-13";
 
   src = fetchFromGitHub {
     owner = "eafer";
     repo = "rdrview";
-    rev = "00207dc516b035ae7760d005bd559077cc18e0b2";
-    sha256 = "0nkcsyl923zzrby8rdgsh97nzp7kg70j063frxh6bh3ikjd5sjgq";
+    rev = "9bde19f9e53562790b363bb2e3b15707c8c67676";
+    sha256 = "sha256-46JY6WuLYHLJl3omgmysR/TGO3zrrJO397x7/EJVz/A=";
   };
 
   buildInputs = [ libxml2 libseccomp curl ];
