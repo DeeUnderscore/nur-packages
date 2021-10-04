@@ -53,7 +53,11 @@ stdenv.mkDerivation rec {
   postInstall = ''
     rm $out/COPYING.txt
     mkdir -p $out/bin
-    mv $out/client/client $out/bin
+    mv $out/client/client $out/bin/input-overlay-client
+    mv $out/share/obs/obs-plugins/input-overlay/data/locale \
+      $out/share/obs/obs-plugins/input-overlay/
+    rm $out/share/obs/obs-plugins/input-overlay/data/example.html
+    rmdir $out/share/obs/obs-plugins/input-overlay/data
     rmdir $out/client
   '';
 
