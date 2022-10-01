@@ -26,7 +26,6 @@ There is a Cachix cache available for these packages: <https://deeunderscore-nur
 * **coeurl**: <https://nheko.im/nheko-reborn/coeurl>
 * **pktriggercord**: <http://pktriggercord.melda.info/>
 * **jday**: <http://jday.sourceforge.net/jday.html>
-* **geographiclib-cpp**: <https://geographiclib.sourceforge.io/>
 
 ## Notes
 ### input-overlay
