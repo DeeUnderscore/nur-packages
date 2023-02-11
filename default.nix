@@ -11,7 +11,7 @@ rec {
     linx-client = pkgs.callPackage ./pkgs/linx-client { };
     nheko-unstable = pkgs.libsForQt5.callPackage ./pkgs/nheko { inherit coeurl; mtxclient = mtxclient-unstable; };
     coeurl = pkgs.callPackage ./pkgs/coeurl { };
-    mtxclient-unstable = pkgs.callPackage ./pkgs/mtxclient { inherit coeurl; };
+    mtxclient-unstable = pkgs.callPackage ./pkgs/mtxclient { };
     pktriggercord = pkgs.callPackage ./pkgs/pktriggercord { };
     jday = pkgs.callPackage ./pkgs/jday { };
     # Throwing here breaks CI
